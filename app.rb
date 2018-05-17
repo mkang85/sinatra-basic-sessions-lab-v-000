@@ -9,5 +9,9 @@ end
 
   get '/' do
     erb :index
+  end
+
+    post '/checkout' do
+      session["checkout_item"] = params[:checkout_item]
     end
 end
